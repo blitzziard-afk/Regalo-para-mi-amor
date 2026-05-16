@@ -311,7 +311,7 @@
     height: 100%;
     transform-style: preserve-3d;
     /* CARRUSEL MÁS LENTO: 30 segundos (antes 12s) */
-    animation: rotateCarousel 120s linear infinite;
+    animation: rotateCarousel 300s linear infinite;
   }
 
   @keyframes rotateCarousel {
@@ -727,6 +727,13 @@
         <div class="music-artist"></div>
       </div>
     </button>
+    <button class="music-btn" onclick="selectMusic(3, this)">
+      <span class="music-icon"></span>
+      <div class="music-info">
+        <div class="music-title">OPCIONAL DEPENDE DE TI JEJE</div>
+        <div class="music-artist"></div>
+      </div>
+    </button>
   </div>
 
   <button class="enter-btn" onclick="enterSite()">Abrir mi regalo 💝</button>
@@ -820,7 +827,8 @@ Cada día a tu lado es una nueva aventura y una razón para sonreír y poder dar
 const MUSIC_TRACKS = [
   { name: "Primer Año 🎵",  url: "PrimerAño.mp3" },
   { name: "Segundo Año 🎶", url: "SegAño.mp3"    },
-  { name: "Tercer Año 🎼",  url: "TercerAño.mp3" }
+  { name: "Tercer Año 🎼",  url: "TercerAño.mp3" },
+  { name: "Opcional 🎶", url: "Opcional.mp3"    }
 ];
 
 // =============================================
